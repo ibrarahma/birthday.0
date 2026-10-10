@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff6b9a">
+  <meta name="description" content="Mubeen ke liye Ibrar ki taraf se ek pyaara sa birthday surprise.">
+  <title>Meri jaan ke liya 💗 | Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floaties" aria-hidden="true" id="floaties"></div>
+  <main>
+    <section class="screen gate-screen active" id="gate">
+      <div class="stars" aria-hidden="true">✦　·　✧　·　✦</div>
+      <div class="gate-art" aria-hidden="true">🌙✨</div>
+      <p class="eyebrow">Ek chhota sa secret...</p>
+      <h1>Meri jaan ke liya 💗 <br> Birthday Surprise<span class="script">💗</span></h1>
+      <p class="muted light">Yeh page ek bohot khaas insaan ke liye hai.<br>Pehchaano, kisne banaya hoga? </p>
+      <form id="unlockForm" class="unlock-form">
+        <label class="sr-only" for="password">Surprise ka password</label>
+        <input id="password" type="password" placeholder="Secret password daalo…" autocomplete="off" required>
+        <button class="btn primary" type="submit">Surprise kholo 🔐</button>
+        <p class="hint">Hint: meri favourite person ka naam 💞</p>
+        <p id="gateError" class="error" role="alert"></p>
+      </form>
+    </section>
+
+    <section class="screen welcome-screen" id="welcome">
+      <div class="topline"><span>💌 Tumhare liye ek message</span><span>01 / 05</span></div>
+      <div class="welcome-illustration" aria-hidden="true"><span class="crown">👑</span><span class="girl">👧🏻</span><span class="heart h1">💗</span><span class="heart h2">💕</span></div>
+      <p class="eyebrow">Aaj ka din sirf tumhara hai</p>
+      <h1>Meri Mubeen! <span class="wiggle">💖</span></h1>
+      <h2 class="subheading">Happy Birthday meri pyaari Mubeen! 🎂</h2>
+      <p class="body-copy">Aaj ka din mere liye bhi bohot special hai, kyunki aaj tum is duniya mein aayi thi. Main kitna lucky hoon ke tum meri zindagi ka hissa ho. Yeh chhota sa surprise sirf tumhare chehre par smile laane ke liye banaya hai. 🥹❤️</p>
+      <button class="btn primary" data-go="home">Chalo, surprise dekho → <span>→</span></button>
+      <p class="tiny">P.S. Hamesha aise hi muskurati rehna, tumhari smile bohot pyaari hai. 🌷</p>
+    </section>
+
+    <section class="screen home-screen" id="home">
+      <header class="home-header"><div class="mini-logo">I <span>♥</span> M</div><button class="icon-btn" id="backToWelcome" aria-label="Back">⌂</button></header>
+      <p class="eyebrow">Tumhare liye meri chhoti si duniya</p>
+      <h1>Happy Birthday<br><span class="script">Mubeen</span> 💕</h1>
+      <p class="body-copy">Apna surprise choose karo, birthday girl! 💗</p>
+      <div class="menu-grid">
+        <button class="menu-card gift-card" data-go="gift"><span class="card-emoji">🎁</span><strong>Gift ka surprise</strong><small>Tumhare liye ek gift</small></button>
+        <button class="menu-card letter-card" data-go="letter"><span class="card-emoji">💌</span><strong>Dil ki baat 💌</strong><small>Mere dil ki baat padho</small></button>
+        <button class="menu-card gallery-card" data-go="gallery"><span class="card-emoji">📸</span><strong>Hamari yaadein</strong><small>Apni photos dekho</small></button>
+        <button class="menu-card cake-card wide" data-go="cake"><span class="card-emoji">🎂</span><span><strong>Birthday cake</strong><small>Wish maango! ✨</small></span><span class="arrow">→</span></button>
+        <button class="menu-card promise-card wide" data-go="promise"><span class="card-emoji">🤝💗</span><span><strong>Mujhse kya promise logi?</strong><small>Apni dil ki baat yahan likho</small></span><span class="arrow">→</span></button>
+      </div>
+      <p class="tiny">Yeh har chhoti cheez tumhe yaad dilane ke liye hai ke tum mere liye kitni special ho. 💗</p>
+    </section>
+
+    <section class="screen feature-screen" id="gift">
+      <button class="back-btn" data-go="home">← Surprises par wapas</button>
+      <div class="feature-icon">🎀</div>
+      <p class="eyebrow">Sirf tumhare liye kuch khaas</p>
+      <h1>Tumhara special gift 🎁</h1>
+      <p class="body-copy">Main apna saara pyaar ek box mein pack toh nahi kar sakta… isliye tumhare liye yeh chhota sa surprise banaya hai. ❤️</p>
+      <button id="openGift" class="gift-box" aria-label="Open the gift"><span class="gift-lid"></span><span class="gift-bow">🎀</span><span class="gift-ribbon"></span><span class="gift-body">💝</span><span class="gift-label">KHOLNE KE LIYE TAP KARO</span></button>
+      <div id="giftReveal" class="reveal hidden">
+        <h2>Surprise meri Mubeen! 🥹💗</h2>
+        <div class="ring-surprise" aria-label="A special ring">💍</div>
+        <h3 class="ring-caption">Your special gift — ek pyaari si ring 💍</h3>
+        <p>Yeh ring hamare pyaar aur ek dusre ki care karne ki yaad hai. ❤️</p>
+        <p>Mera gift ek promise hai: main tumhari khushi mein tumhare saath khada rahunga, tumhari baatein sununga, tumhare sapno ko support karunga aur tumhe yaad dilata rahunga ke tum kitni amazing ho. Sirf aaj nahi, har din. ❤️</p>
+        <p class="script">Tum duniya ki saari khushiyan deserve karti ho. — Tumhara Ibrar 💗</p>
+      </div>
+      <button class="btn secondary" data-go="letter">Agla surprise: dil ki baat 💌</button>
+    </section>
+
+    <section class="screen feature-screen promise-screen" id="promise">
+      <button class="back-btn" data-go="home">← Surprises par wapas</button>
+      <div class="feature-icon">💗🤝</div>
+      <p class="eyebrow">Ab tumhari baari, meri Mubeen</p>
+      <h1>Mujhse kya promise logi? 💌</h1>
+      <p class="body-copy">Jo bhi tum chahti ho ke main promise karun, dil khol kar yahan likho. Main tumhari baat dhyaan se padhunga. ❤️</p>
+      <form id="promiseForm" class="promise-form">
+        <label for="promiseName">Tumhara naam (optional)</label>
+        <input id="promiseName" type="text" placeholder="Mubeen 💗" maxlength="50">
+        <label for="promiseText">Ibrar se tum kya promise chahti ho?</label>
+        <textarea id="promiseText" rows="5" maxlength="700" placeholder="Main chahti hoon ke tum mujhse promise karo ki..." required></textarea>
+        <button class="btn primary" type="submit">Mera promise bhejo 💌</button>
+      </form>
+      <div id="promiseReply" class="reveal hidden" aria-live="polite"></div>
+      <p class="tiny">Note: yeh message isi page par dikhai dega; automatically Ibrar ko send nahi hoga. 💕</p>
+    </section>
+
+    <section class="screen feature-screen letter-screen" id="letter">
+      <button class="back-btn" data-go="home">← Surprises par wapas</button>
+      <div class="letter-paper">
+        <div class="letter-flower">🌷</div>
+        <p class="script">Meri sabse pyaari Mubeen, 💗</p>
+        <p>Kabhi-kabhi mujhe samajh nahi aata ke apne dil ki baat lafzon mein kaise bataun, lekin main chahta hoon ke tum hamesha yeh mehsoos karo ke tum mere liye kitni khaas ho.</p>
+        <p>Mubeen, tum meri zindagi ke aam se din ko bhi khaas bana deti ho. Tumhari smile dekh kar dil halka ho jaata hai, aur tumse baat karke din behtar lagne lagta hai. Tumhare saath hui har baat, har hansi aur har chhoti si yaad mere liye bohot precious hai. ❤️</p>
+        <p>Tumhare birthday par meri dua hai ke tumhare dil ko sukoon mile, tumhare har sapne ko pankh milen aur tumhe muskurane ki hazaar wajah milein. Kabhi apni value mat bhoolna. Tum bohot special ho, aur tumhari khushi mere liye bohot maayne rakhti hai. 🌷</p>
+        <p>Aane wala saal tumhari zindagi mein pyaar, kamyabi, sehat aur sukoon lekar aaye. Jab tum apne sapno ki taraf badho, main dil se tumhare liye cheer karunga. Main chahta hoon ke tum hamesha apne aap par yaqeen rakho, kyunki tum bohot kuch kar sakti ho. ❤️</p>
+        <p class="script signoff">Janamdin mubarak meri jaan!<br>Hamesha tumhara, Ibrar 💌</p>
+      </div>
+      <button class="btn primary" data-go="gallery">Agla surprise: hamari yaadein 📸</button>
+    </section>
+
+    <section class="screen feature-screen gallery-screen" id="gallery">
+      <button class="back-btn" data-go="home">← Surprises par wapas</button>
+      <p class="eyebrow">Chhoti chhoti yaadein, bohot saara pyaar</p>
+      <h1>Hamari yaadon ka kona 📸</h1>
+     
+    
+      <input type="file" id="photoUpload" accept="image/*" multiple>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="memory-tile pastel-a"><span>🌸</span><p>Pyaare lamhe</p></div>
+        <div class="memory-tile pastel-b"><span>🌅</span><p>Hamari chhoti si duniya</p></div>
+        <div class="memory-tile pastel-c"><span>🧸</span><p>Hamesha muskurana</p></div>
+      </div>
+      <p class="tiny">Tip: share karne se pehle apni favourite photos project mein add kar sakte ho. 💞</p>
+      <!-- Mubeen ke liye special video ❤️ -->
+<div class="video-memory">
+  <h2>happy birthday mera baccha 💗</h2>
+  <video controls playsinline width="100%"
+         style="max-width:600px; border-radius:16px;">
+    <source src="C:\Users\md furkan\Downloads\WhatsApp Video 2026-10-10 at 6.00.55 PM.mp4" type="video/mp4">
+    Tumhara browser video support nahi karta.
+  </video>
+</div>
+      
+
+      <button class="btn secondary" data-go="cake">Ab cake ka time! 🎂</button>
+    </section>
+
+    <section class="screen feature-screen cake-screen" id="cake">
+      <button class="back-btn" data-go="home">← Surprises par wapas</button>
+      <p class="eyebrow">Wish maango, birthday girl! ✨</p>
+      <h1>Happy Birthday, Mubeen! 🎂</h1>
+      <p class="body-copy">Aankhein band karo, dil se wish maango, phir candles par tap karo. ✨</p>
+      <div class="cake-scene">
+        <div class="candles">
+          <button class="candle lit" aria-label="Blow out candle 1">🕯️</button>
+          <button class="candle lit" aria-label="Blow out candle 2">🕯️</button>
+          <button class="candle lit" aria-label="Blow out candle 3">🕯️</button>
+        </div>
+        <div class="cake-top">🍓 🍒 🍓</div><div class="cake-layer layer-top"></div><div class="cake-layer layer-bottom"></div><div class="cake-plate"></div>
+      </div>
+      <p id="wishText" class="wish-text">Tumhare saare sapne khoobsurati se poore hon. 🌷</p>
+      <button id="wishBtn" class="btn primary">Maine wish maang li ✨</button>
+      <div class="final-note hidden" id="finalNote"><h2>Happy Birthday meri Mubeen! 💗</h2><p>Dua hai tumhara yeh saal pyaar, hansi, achhi sehat aur khoobsurat surprises se bhara ho. Hamesha chamakti rehna, bade sapne dekhna aur apni pyaari si personality kabhi mat badalna. ❤️</p><p class="script">Main tumse bohot pyaar karta hoon. Hamesha. — Ibrar ❤️</p><div class="big-hearts">💗 💖 💕</div></div>
+      <button class="btn secondary" data-go="home">Phir se surprises dekho ↺</button>
+    </section>
+
+    <footer class="site-footer">Yah ek Meri <span>♥</span> khaas Insan ke liye hai</footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
